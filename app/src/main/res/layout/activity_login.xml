@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="로그인"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="12dp"
+        app:dividerColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_login_title" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_edittext_with_border"
+        android:hint="이메일을 입력해주세요"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="20dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_edittext_with_border"
+        android:hint="비밀번호를 입력해주세요"
+        android:inputType="textPassword"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="20dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/shape_button_with_border"
+        android:text="로그인"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password"
+        />
+
+    <TextView
+        android:id="@+id/tv_id_find"
+        android:layout_marginTop="16dp"
+        android:text="아이디 찾기"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_vertical_divider"
+        app:layout_constraintTop_toBottomOf="@id/tv_login"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_vertical_divider"
+        android:text=" | "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/tv_id_find"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_id_find"
+        app:layout_constraintEnd_toStartOf="@id/tv_password_find"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_password_find"
+        android:text="비밀번호 찾기"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/tv_vertical_divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_id_find"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/shape_button_with_border"
+        android:text="회원가입"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_id_find"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
