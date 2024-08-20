@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "734741395701",
+    "project_id": "modoomap-398d8",
+    "storage_bucket": "modoomap-398d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734741395701:android:f2fff203d2f34cd2966dbc",
+        "android_client_info": {
+          "package_name": "com.example.modoomap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGcwK2edDR7w3yNwsp1vJZqVhI5IyPQsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
